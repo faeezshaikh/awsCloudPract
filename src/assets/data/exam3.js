@@ -575,18 +575,338 @@
     ,
     {
         "Id": 41,
-        "Name": "", 
+        "Name": "Your company has an application that requires access to a NoSQL database. Your IT department has no desire to manage the NoSQL servers. Which Amazon service provides a fully-managed and highly available NoSQL service?", 
         "Tag":"",
         "manyoptions":false,
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }],
-            "Explanation": "",
-            "Ref":""  
+            { "Id": 1055, "QuestionId": 1010, "Name": "SimpleDB", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon RDS", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "ElasticMap Reduce", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "DynamoDB", "IsAnswer": true }],
+            "Explanation": "Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed cloud database and supports both document and key-value store models. Its flexible data model, reliable performance, and automatic scaling of throughput capacity, makes it a great fit for mobile, web, gaming, ad tech, IoT, and many other applications."
     } 
-   
+    ,
+    {
+        "Id": 42,
+        "Name": "Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Regions", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS edge locations", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Availability Zones", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Virtual Private Cloud (Amazon VPC)", "IsAnswer": false }],
+            "Explanation": "To deliver content to end users with lower latency, Amazon CloudFront uses a global network of 138 Points of Presence (127 Edge Locations and 11 Regional Edge Caches) in 63 cities across 29 countries.",
+            "Ref":"https://aws.amazon.com/cloudfront/"  
+    } 
+    ,
+    {
+        "Id": 43,
+        "Name": "What is the main benefit of decoupling an application?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Make updates quickly and easily.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Optimize costs", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Increase the integrity of the application's components", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Reduce inter-dependencies so failures do not impact other components of the application.", "IsAnswer": true}],
+            "Explanation": "The entire concept of decoupling components is to ensure that the different components of an applications can be managed and maintained separately. If all components are tightly coupled then when one component goes down , the entire application would do down. Hence it is always a better design practice to decouple application components."
+    } 
+    ,
+    {
+        "Id": 44,
+        "Name": "Which of the following allows you to carve out a portion of the AWS Cloud?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Subnets", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Regions", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS VPC", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Availability Zones", "IsAnswer": false }],
+            "Explanation": "Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.",
+            "Ref":"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html"  
+    } 
+    ,
+    {
+        "Id": 45,
+        "Name": "You have just set up a brand new AWS account. You want to keep monthly billing under $100, but you are worried about going over that limit. What can you use in order to be notified when the monthly bill approaches $100?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "A CloudTrail billing alarm that triggers an SNS notification to your email address.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "A SNS billing alarm that triggers a CloudWatch notification to your email address.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "A CloudWatch billing alarm that triggers an SNS notification to your email address.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "A CloudWatch billing alarm that triggers a CloudTrail notification to your email address.", "IsAnswer": false }],
+            "Explanation": "In CloudWatch, you can set up a billing alarm that will trigger when your monthly bill hit the set threshold. That alarm can then be set up to trigger an SNS topic that will send you a notification that the alarm threshold has been met."
+    } 
+    ,
+    {
+        "Id": 46,
+        "Name": "Your company is running a web application and is noticing that they are  paying for way more server capacity than required. What AWS feature should you set up and configure to ensure that your application is automatically adding/removing the server capacity to keep in line with the required demand?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS EC2", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Autoscaling", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS ELB", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Inspector", "IsAnswer": false }],
+            "Explanation": "Auto scaling is the feature that automated the process of adding/removing server capacity from a system (based on usage demand). Auto scaling creates a very cost effective system by never having too much or too little server capacity."
+    } 
+    ,
+    {
+        "Id": 47,
+        "Name": "You work as on-premises MySQL DBA. The work of database configuration, backups, patching, and DR can be time-consuming and repetitive. Your company decided to migrate to the AWS cloud. Which of the following can help you save time on the regular database tasks and focus on giving them the fast performance and high availability that they need?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Redshift", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon RDS", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon DynamoDB", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon CloudWatch", "IsAnswer": false }],
+            "Explanation": "Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.",
+            "Ref":"https://aws.amazon.com/rds/"  
+    } 
+    ,
+    {
+        "Id": 48,
+        "Name": "A company is planning to introduce a new product to their customers. They are expecting high traffic to their web application. As part of the Enterprise support plan, which of the following could provide them with architectural and scaling guidance?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Infrastructure Event Management", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Management Support", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Support API", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Support Concierge Service", "IsAnswer": false }],
+            "Explanation": "AWS Infrastructure Event Management is a short-term engagement with AWS Support, available as part of the Enterprise-level Support product offering, and available for additional purchase for Business-level Support subscribers. AWS Infrastructure Event Management partners with your technical and project resources to gain a deep understanding of your use case and provide architectural and scaling guidance for an event. Common use-case examples for AWS Event Management include advertising launches, new product launches, and infrastructure migrations to AWS.",
+            "Ref":" https://aws.amazon.com/premiumsupport/features/"  
+    } 
+    ,
+    {
+        "Id": 49,
+        "Name": "What are the benefits of the AWS Personal Health Dashboard? (Select 3 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Personalized View of Service Health", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Detailed Troubleshooting Guidance", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Proactive Notifications", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Cost Optimization", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Cost Analysis", "IsAnswer": false }],
+            "Explanation": "**Personalized View of Service Health: Personal Health Dashboard gives you a personalized view of the status of the AWS services that power your applications, enabling you to quickly see when AWS is experiencing issues that may impact you. For example, in the event of a lost EBS volume associated with one of your EC2 instances, you would gain quick visibility into the status of the specific service you are using, helping save precious time troubleshooting to determine root cause. **Proactive Notifications: The dashboard also provides forward looking notifications, and you can set up alerts across multiple channels, including email and mobile notifications, so you receive timely and relevant information to help plan for scheduled changes that may affect you. In the event of AWS hardware maintenance activities that may impact one of your EC2 instances, for example, you would receive an alert with information to help you plan for, and proactively address any issues associated with the upcoming change. **Detailed Troubleshooting Guidance: When you get an alert, it includes remediation details and specific guidance to enable you to take immediate action to address AWS events impacting your resources. For example, in the event of an AWS hardware failure impacting one of your EBS volumes, your alert would include a list of your affected resources, a recommendation to restore your volume, and links to the steps to help you restore it from a snapshot. This targeted and actionable information reduces the time needed to resolve issues.",
+            "Ref":"https://aws.amazon.com/premiumsupport/phd/"  
+    } 
+    ,
+    {
+        "Id": 50,
+        "Name": "You have 2 accounts in AWS. One for the Dev and the other for QA. All are part of consolidated billing. The master account has purchased 4 reserved instances. The Dev department is currently using 2 reserved instances. The QA team is planning on using 3 instances, which are of the same instance type. What is the pricing tier of the instances that can be used by the QA Team?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "No Reserved and 3 on-demand", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "One Reserved and 2 on-demand", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Two Reserved and 1 on-demand", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Three Reserved and no on-demand", "IsAnswer": false }],
+            "Explanation": "Since all are a part of consolidating billing, the pricing of reserved instances can be shared by All. And since 2 are already used by the Dev team , another 2 can be used by the QA team. The rest of the instances can be on-demand instances."
+    } 
+    ,
+    {
+        "Id": 51,
+        "Name": "What is the AWS feature that enables you to manage AWS services through a web-based user interface?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS API", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Management Console", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS SDK", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS CLI", "IsAnswer": false }],
+            "Explanation": "The AWS Management console allows you to access and manage Amazon Web Services through a simple and intuitive web-based user interface. You can also use the AWS Console mobile app to quickly view resources on the go.",
+            "Ref":"https://aws.amazon.com/console/"  
+    }   ,
+    {
+        "Id": 52,
+        "Name": "According to the AWS Acceptable Use Policy, penetration testing of EC2 instances:", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "May be performed by AWS, and will be performed by AWS upon customer request.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "May be performed by AWS, and is periodically performed by AWS.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Are expressly prohibited under all circumstances.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "May be performed by the customer on their own instances with prior authorization from AWS", "IsAnswer": true }],
+            "Explanation": "Penetration/Vulnerability testing can be performed only on your own instances, with mandatory prior approval, and must not violate the AWS Acceptable Use Policy. ",
+            "Ref":"https://aws.amazon.com/security/penetration-testing/"  
+    }   ,
+    {
+        "Id": 53,
+        "Name": "What best describes the 'Principle of Least Privilege'?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "All users should have the same baseline permissions granted to them to use basic AWS services.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Users should always have a little more access granted to them then they need, just in case they end up needed it in the future.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Users should submit all access request in written so that there is a paper trail of who needs access to different AWS resources.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Users should be granted permission to access only resources they need to do their assigned job.", "IsAnswer": true }],
+            "Explanation": "This principle is very important as one of the security best practices and it means granting only the permissions required to perform a task. Determine what users need to do and then craft policies for them that let the users perform only those tasks.start with a minimum set of permissions and grant additional permissions as necessary. Doing so is more secure than starting with permissions that are too lenient and then trying to tighten them later. For example, a user account for the sole purpose of creating backups does not need to install software: hence, it has rights only to run backup and backup-related applications.",
+            "Ref":"https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege"  
+    }   ,
+    {
+        "Id": 54,
+        "Name": "You are facing performance issues with your underdevelopment application built using microservices architecture. Which of the following services would help you analyze these issues?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "X-Ray", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS CodePipeline", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Inspector", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Config", "IsAnswer": false }],
+            "Explanation": "AWS X-Ray helps developers analyze and debug distributed applications in production or under development, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing so you can identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components. You can use X-Ray to analyze both applications in development and in production, from simple three-tier applications to complex microservices applications consisting of thousands of services.",
+            "Ref":"https://d1.awsstatic.com/whitepapers/aws-overview.pdf"  
+    }   ,
+    {
+        "Id": 55,
+        "Name": "An organization has set up consolidated billing with 3 different AWS accounts. Which of the below-mentioned advantages will organization receive in terms of the AWS pricing?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "The consolidated billing does not bring any cost advantage for the organization", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "All AWS accounts will be charged for S3 storage by combining the total storage of each account", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The EC2 instances of each account will receive a total of 750*3 micro instance hours free", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "The free usage tier for all the 3 accounts will be 3 years and not a single year", "IsAnswer": false }],
+            "Explanation": "AWS consolidated billing enables the organization to consolidate payments for multiple Amazon Web Services (AWS) accounts within a single organization by making a single paying account. For billing purposes, AWS treats all the accounts on the consolidated bill as one account. Some services, such as Amazon EC2 and Amazon S3 have volume pricing tiers across certain usage dimensions that give the user lower prices when he uses the service more. For example if you you use 50 TB in each account you will be charged $23 *50*3 (because they are 3 different accounts), But using consolidated billing you will be charged $23*50+$22*50*2 (because they are treated as one account) which means that you saved $100. For more info on how s3 will be priced visit this link.",
+            "Ref":"https://aws.amazon.com/s3/pricing/"  
+    }   ,
+    {
+        "Id": 56,
+        "Name": "Which of the below S3 storage classes is ideal for data with unpredictable access patterns?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon S3 Intelligent-Tiering.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon S3 on-demand-Tiering.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon S3 Standard Tiering.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon S3 Standard-Infrequent Access Tiering.", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Amazon S3 Glacier Tiering.", "IsAnswer": false }],
+            "Explanation": "The S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead. It works by storing objects in two access tiers: one tier that is optimized for frequent access and another lower-cost tier that is optimized for infrequent access. For a small monthly monitoring and automation fee per object, Amazon S3 monitors access patterns of the objects in S3 Intelligent-Tiering, and moves the ones that have not been accessed for 30 consecutive days to the infrequent access tier. If an object in the infrequent access tier is accessed, it is automatically moved back to the frequent access tier. There are no retrieval fees when using the S3 Intelligent-Tiering storage class, and no additional tiering fees when objects are moved between access tiers. It is the ideal storage class for long-lived data with access patterns that are unknown or unpredictable. S3 Storage Classes can be configured at the object level and a single bucket can contain objects stored in S3 Standard, S3 Intelligent-Tiering, S3 Standard-IA, and S3 One Zone-IA. You can upload objects directly to S3 Intelligent-Tiering, or use S3 Lifecycle policies to transfer objects from S3 Standard and S3 Standard-IA to S3 Intelligent-Tiering. You can also archive objects from S3 Intelligent-Tiering to S3 Glacier.",
+            "Ref":"https://aws.amazon.com/s3/storage-classes/"  
+    }   ,
+    {
+        "Id": 57,
+        "Name": "You noticed that several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances have been terminated. Which of the following AWS services would help you determine who took this action?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Trusted Advisor", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon EC2 instance usage report", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon CloudWatch", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS CloudTrail", "IsAnswer": true }],
+            "Explanation": "WS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. ",
+            "Ref":"https://aws.amazon.com/cloudtrail/"  
+    }   ,
+    {
+        "Id": 58,
+        "Name": "A company decided to migrate to the AWS cloud. AWS offers a wide range of services and instance types. They want to reduce costs as much as they can. Which of the following is the main factor to consider when choosing the instance type of services like Amazon RDS, Amazon Redshift, and Amazon Elasticsearch?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Your team experience with these services.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Workload utilization of CPU & RAM.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The type of your current on-premise database.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Sources of traffic.", "IsAnswer": false }],
+            "Explanation": "AWS offers a broad range of resource types and configurations to suit a plethora of use cases. For example,services like Amazon EC2, Amazon RDS, Amazon Redshift, and Amazon Elasticsearch Service(Amazon ES)give you a lot of choice of instance types. In some cases, you should select the cheapest type that suits your workload’s requirements. In other cases, using fewer instances of a larger instance type might result in lower total cost or better performance. You should benchmark and select the right instance type depending on how your workload utilizes CPU, RAM, network, storage size, and I/O.",
+            "Ref":"https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf"  
+    }   ,
+    {
+        "Id": 59,
+        "Name": "Which of the following factors would impact the process of data replication to a remote location?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Distance between the sites", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Available bandwidth", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Data rate required by your application", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Replication technology", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "IsAnswer": true }],
+            "Explanation": "When you replicate data to a remote location, you should consider these factors: *Distance between the sites—Larger distances typically are subject to more latency or jitter. *Available bandwidth—The breadth and variability of the interconnections.*Data rate required by your application—The data rate should be lower than the available bandwidth. *Replication technology—The replication technology should be parallel (so that it can use the network effectively). ",
+            "Ref":"https://media.amazonwebservices.com/AWS_Disaster_Recovery.pdf"  
+    }   ,
+    {
+        "Id": 60,
+        "Name": "What should you do in order to keep the data on EBS volumes safe?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Delete the data when the device is destroyed", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Create EBS snapshots", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Attach volumes to EC2 Instances", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Create copies of EBS Volumes", "IsAnswer": false }],
+            "Explanation": "Creating snapshots of EBS Volumes can help ensure that you have a backup of your EBS volume in place. ",
+            "Ref":"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html"  
+    }     ,
+    {
+        "Id": 61,
+        "Name": "A company is deploying a new two-tier web application in AWS. The company wants to store their most frequently used data so that the response time of the application is improved. Which AWS service provides the solution for the company’s requirements?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "MySQL Installed on two Amazon EC2 Instances in a single Availability Zone", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon ElastiCache", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon RDS for MySQL with Multi-AZ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Caching service", "IsAnswer": false }],
+            "Explanation": "Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory data store or cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory data stores, instead of relying entirely on slower disk-based databases.",
+            "Ref":"https://aws.amazon.com/elasticache/"  
+    }     ,
+    {
+        "Id": 62,
+        "Name": "A user has created a photo editing software and hosted it on EC2. The software accepts requests from the user about the photo format and resolution and sends a message to S3 to enhance the picture accordingly. Which of the below-mentioned AWS services will help make a scalable software with the AWS infrastructure in this scenario?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Simple Notification Service", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Simple Queue Service", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Elastic Transcoder", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Glacier", "IsAnswer": false }],
+            "Explanation": "Amazon Simple Queue Service (SQS) is a fast, reliable, scalable, and fully managed message queuing service. Using SQS, you can send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available",
+            "Ref":"https://aws.amazon.com/sqs/"  
+    }     ,
+    {
+        "Id": 63,
+        "Name": "In AWS, which security aspects are the customer’s responsibility? Choose three", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "The configuration of the security groups.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Hardware Global Infrastructure.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Networking traffic protection.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Controlling physical access to compute resources.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Encryption of EBS volumes.", "IsAnswer": true }],
+            "Explanation": "See link for reference",
+            "Ref":"https://aws.amazon.com/compliance/shared-responsibility-model/"  
+    }     ,
+    {
+        "Id": 64,
+        "Name": "You are planning to host your education website on AWS. Most of your video courses supposed to be streamed from all around the world. Which of the following AWS services would help you achieve high transfer speeds?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Cloud Formation", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS CloudFront", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Delivery", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Cloud Distributer", "IsAnswer": false }],
+            "Explanation": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment",
+            "Ref":"https://aws.amazon.com/cloudfront/"  
+    }     ,
+    {
+        "Id": 65,
+        "Name": "Which of the following services allows you to manage your agreements with AWS?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Agreements", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Auditor", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Artifact", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Systems Manager", "IsAnswer": false }],
+            "Explanation": "AWS Artifact is your go-to, central resource for compliance-related information that matters to you. It provides on-demand access to AWS’ security and compliance reports and review, accept, and manage your agreements with AWS.",
+            "Ref":"https://aws.amazon.com/artifact/"  
+    }    
     
     ]
 }
