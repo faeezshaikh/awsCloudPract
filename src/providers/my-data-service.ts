@@ -42,6 +42,7 @@ export class MyDataService {
     // this.topicMap.set(5, 'assets/data/exam3.js');
     this.examsMap.set(5, 'assets/data/exam1.js');
     this.examsMap.set(6, 'assets/data/exam3.js');
+    this.examsMap.set(7, 'assets/data/exam4.js');
 
     
   }
