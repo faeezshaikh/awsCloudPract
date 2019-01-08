@@ -268,16 +268,240 @@
     },
     {
         "Id": 21,
-        "Name": "", 
+        "Name": "Which of the following is an AWS managed database service that provides processing power up to 5X faster than a traditional MySQL database?", 
         "Tag":"",
         "manyoptions":false,
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }],
-        "Explanation": "",
-        "Ref":""  
+            { "Id": 1055, "QuestionId": 1010, "Name": "MariaDB", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "PostgreSQL", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Aurora", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "DynamoDB", "IsAnswer": false }],
+        "Explanation": "Amazon Aurora (Aurora) is a fully managed, MySQL- and PostgreSQL-compatible, relational database engine. It combines the speed and reliability of high-end commercial databases with the simplicity and cost-effectiveness of open-source databases. It delivers up to five times the throughput of MySQL and up to three times the throughput of PostgreSQL without requiring changes to most of your existing applications. ",
+        "Ref":"https://aws.amazon.com/rds/aurora/"  
+    },{
+        "Id": 22,
+        "Name": "Which of the following is AWS's responsibility under the AWS shared responsibility model?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Configuring third-party applications", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Maintaining physical hardware", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Securing application access and data", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Managing custom Amazon Machine Images (AMIs)", "IsAnswer": false }],
+            "Explanation": "See link for details",
+            "Ref":"https://aws.amazon.com/compliance/shared-responsibility-model/"  
+    },{
+        "Id": 23,
+        "Name": "What are the AWS recommendations about your root access keys?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Delete them.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Save them in a secure place.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Only share them with trusted people.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above.", "IsAnswer": false }],
+        "Explanation": "AWS recommends that you delete your root access keys because you can’t restrict permissions for the root user credentials. If you want to manage a service that require administrative access create an IAM user, Grant administrator access and use those credentials to interact with AWS."
+    },{
+        "Id": 24,
+        "Name": "How can you modify user permissions on AWS?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Using AWS KMS.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Using AWS IAM.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Using Security Groups.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "By contacting the AWS Support team.", "IsAnswer": false }],
+        "Explanation": "AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources.",
+        "Ref":"https://aws.amazon.com/iam/"  
+    },{
+        "Id": 25,
+        "Name": "Which of the following would help the customer to delve deeply into the Amazon EC2 billing activity for the last month?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS TCO", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Cloud Trail logs", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Cost and Usage reports", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS CloudWatch", "IsAnswer": false }],
+        "Explanation": "The AWS Cost & Usage Report gives you the ability to delve deeply into your AWS cost and usage data, understand how you are using your AWS implementation, and identify opportunities for optimization.",
+        "Ref":"https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/"  
+    },{
+        "Id": 26,
+        "Name": "A user is trying to save some cost on the AWS services. Which of the below mentioned options will not help him save cost?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Delete the unutilized EBS volumes once the instance is terminated", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Delete the AutoScaling launch configuration after the instances are terminated", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Release the elastic IP if not required once the instance is terminated", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Delete the AWS ELB after the instances are terminated", "IsAnswer": false }],
+        "Explanation": "AWS bills the user on a as pay as you go model. AWS will charge the user once the AWS resource is allocated. Even though the user is not using the resource, AWS will charge if it is in service or allocated. Thus, it is advised that once the user's work is completed he should: Terminate the EC2 instance Delete the EBS volumes Release the unutilized Elastic IPs Delete ELB The AutoScaling launch configuration does not cost the user. Thus, it will not make any difference to the cost whether it is deleted or not."
+
+    },{
+        "Id": 27,
+        "Name": "What would we get from having AWS Cloud services accessible through an API?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Improve performance of these resources", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Optimize AWS infrastructure cost", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Be able to manage Cloud resources programmatically", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Reduce the number of programmers", "IsAnswer": false }],
+        "Explanation": "The Application Programming Interface allows developers to easily work with the various AWS resources programmatically."
+    },{
+        "Id": 28,
+        "Name": "Which of the following services can be used for processing images uploaded to S3?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Glacier", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Lambda", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Artifact", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon PinPoint.", "IsAnswer": false }],
+        "Explanation": "AWS Lambda has many use cases. one of its simplest use cases is using it to process objects created in S3 as follows: 1- User uploads an object to an S3 bucket (object-created event). 2- Amazon S3 detects the object-created event. 3- Amazon S3 invokes a Lambda function that is specified in the bucket notification configuration. 4- AWS Lambda executes the Lambda function by assuming the execution role that you specified at the time you created the Lambda function. 5- The Lambda function executes. For more use cases visit this link.",
+        "Ref":"https://docs.aws.amazon.com/lambda/latest/dg/use-cases.html"  
+    },{
+        "Id": 29,
+        "Name": "If you have big amounts of data that needs to be archived. Which of the following would be the most efficient way to store them in AWS?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use Amazon Storage Gateway", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use Amazon Glacier", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use Amazon EBS", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use Amazon S3", "IsAnswer": false }],
+        "Explanation": "Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup. It is designed to deliver 99.999999999% durability, and provides comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.",
+        "Ref":"https://aws.amazon.com/glacier/"  
+    },{
+        "Id": 30,
+        "Name": "Once again, your customers are concerned about the security of their sensitive data and, with their latest inquiry, ask about what happens to old storage devices on AWS. What would be the best answer to this question?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS reformats the disks and uses them again.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS uses the techniques detailed in DoD 5220.22-M to destroy data as part of the decommissioning process.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS uses their own proprietary software to destroy data as part of the decommissioning process.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS uses a 3rd party security organization to destroy data as part of the decommissioning process.", "IsAnswer": false }],
+        "Explanation": "When a storage device has reached the end of its useful life, AWS procedures include a decommissioning process that is designed to prevent customer data from being exposed to unauthorized indMduals. AWS uses the techniques detailed in DoD 5220.22-M ('National| Industrial Security Program Operating ManuaI '') or NIST 800-88 ('GuideIines for Media Sanitization') to destroy data as part of the decommissioning process. All decommissioned magnetic storage devices are degaussed and physically destroyed in accordance with industry-standard practices.",
+        "Ref":"http://d0.awsstatic.com/whitepapers/Security/AWS%20Security%20Whitepaper.pdf"  
+    },{
+        "Id": 31,
+        "Name": "Which of the following services would help in reducing the complexity and time in planning your application migration to the AWS cloud?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Migration Planner Service", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Application Discovery Service", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Snowball Migration Service", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "IsAnswer": false }],
+        "Explanation": "AWS Application Discovery Service helps systems integrators quickly and reliably plan application migration projects by automatically identifying applications running in on-premises data centers, their associated dependencies, and their performance profiles. Planning data center migrations can involve thousands of workloads that are often deeply interdependent. Application discovery and dependency mapping are important early first steps in the migration process, but these tasks are difficult to perform at scale due to the lack of automated tools.AWS Application Discovery Service automatically collects configuration and usage data from servers, storage, and networking equipment to develop a list of applications, how they perform, and how they are interdependent. This information is retained in encrypted format in an AWS Application Discovery Service database, which you can export as a CSV or XML file into your preferred visualization tool or cloud migration solution to help reduce the complexity and time in planning your cloud migration. ",
+        "Ref":"https://d0.awsstatic.com/whitepapers/aws-overview.pdf "  
+    },{
+        "Id": 32,
+        "Name": "While working with Amazon S3, you found that six of your S3 buckets are deleted, and no one is taking responsibility. You decided to open an investigation in order to find out who deleted the S3 buckets. Which of the following may help you in your investigation?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Look at the SNS logs.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Look at the CloudWatch Logs.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Look at the CloudTrail logs.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Look at the S3 logs.", "IsAnswer": false }],
+        "Explanation": "AWS CloudTrail can help you track AWS API calls made to S3 and identify who deleted the S3 buckets. AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, the request parameters, and the response elements returned by the AWS service. With CloudTrail, you can get a history of AWS API calls for your account, including API calls made using the AWS Management Console, AWS SDKs, command line tools, and higher-level AWS services (such as AWS CloudFormation). The AWS API call history produced by CloudTrail enables security analysis, resource change tracking, and compliance auditing. ",
+        "Ref":"https://d1.awsstatic.com/whitepapers/aws-overview.pdf"  
+    },{
+        "Id": 33,
+        "Name": "There are substantial differences between AWS Marketplace and Amazon DevPay. One of these differences is ………………….", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "When you buy from AWS DevPay directly you will get great offers based on your usage.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Buying from the AWS DevPay is better than the AWS Marketplace especially when working with Amazon VPC.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Marketplace supports EBS-backed software, while DevPay does not.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Marketplace does not support Reserved and Spot instances while DevPay does.", "IsAnswer": false }],
+        "Explanation": "There are substantial differences between AWS Marketplace and Amazon DevPay. Both help customers buy software that runs on AWS, but AWS Marketplace offers a more comprehensive experience. For software buyers the key differences are: **AWS Marketplace offers a more Amazon.com-like shopping experience, simplifying discovery of available software. **AWS Marketplace products work with other AWS features such as VPC and can be run on Reserved and Spot instances, in addition to normal On Demand Instances. **AWS Marketplace supports EBS-backed software, While DevPay does not . ** Additionally, software providers benefit from AWS Marketplace’s marketing outreach and ease of discovery. ",
+        "Ref":"https://aws.amazon.com/marketplace/help/"  
+    },{
+        "Id": 34,
+        "Name": "Which of the following are two options to pay for the AWS Developer Support Plan? (Choose two)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "4% of monthly AWS usage", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Greater of $29", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Greater of $39", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "3% of monthly AWS usage", "IsAnswer": true }],
+        "Explanation": "See link for details.",
+        "Ref":"https://aws.amazon.com/premiumsupport/pricing/"  
+    },{
+        "Id": 35,
+        "Name": "For managed services like Amazon DynamoDB. What are the security tasks that AWS is responsible for? (Select 2 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Installing an antivirus software.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Configuring firewall.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Create the required access policies.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Protect Credentials.", "IsAnswer": false }],
+        "Explanation": "According to the shared responsibility model AWS is responsible for Installing an antivirus software, OS and database patching, Configuring firewall and Disaster recovery."
+    },{
+        "Id": 36,
+        "Name": "What is a placement group in Amazon EC2?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "It is a group of EC2 instances within a single Availability Zone.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "It is the edge location of your web content.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "It is the AWS region where you run the EC2 instance of your web content.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "It is a group used to span multiple Availability Zones.", "IsAnswer": false }],
+        "Explanation": "A placement group is a logical grouping of instances within a single Availability Zone. ",
+        "Ref":"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html"  
+    },{
+        "Id": 37,
+        "Name": "You need to set up a security certificate for a client's eCommerce website as it will use the HTTPS protocol. Which of the below AWS services do you need to access in order to manage your SSL server certificate?(Select 2 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Directory Service", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Identity & Access Management", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS ACM", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Route 53", "IsAnswer": false }],
+        "Explanation": "To enable HTTPS connections to your website or application in AWS, you need an SSL/TLS server certificate. You can use a server certificate provided by AWS Certificate Manager (ACM) or one that you obtained from an external provider. You can use ACM or IAM to store and deploy server certificates. Use IAM as a certificate manager only when you must support HTTPS connections in a region that is not supported by ACM. IAM supports deploying server certificates in all regions, but you must obtain your certificate from an external provider for use with AWS. Amazon Route 53 is used to register domain names or use your own domain name to route your end users to Internet applications. Route 53 is not responsible for creating SSL certifications. ** https://aws.amazon.com/certificate-manager/ ** ",
+        "Ref":"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html"  
+    },{
+        "Id": 38,
+        "Name": "Big Cloud Jumbo Corp is beginning to explore migrating their entire on-premises data center to AWS. They are very concerned about how much it will cost once their entire I.T. infrastructure is running on AWS. What tool can you recommend so that they can do a cost-benefit analysis of moving to the AWS Cloud?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS TCO calculator", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Estimate Calculator", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS Cost Explorer", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS Migration Cost Calculator", "IsAnswer": false }],
+        "Explanation": "The AWS TCO (Total Cost of Ownership) Calculator is a free tool provided by AWS. It allows you to compare your current on-premises cost vs. estimated AWS cost."
+    },{
+        "Id": 39,
+        "Name": "Which of the following AWS services would you use to register a new domain name in the AWS Platform?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Route 53", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon Cloud Front", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Elastic Load Balancing", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Virtual Private Cloud (Amazon VPC)", "IsAnswer": false }],
+        "Explanation": "Route53 allows for registration of new domain names in AWS. Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well.",
+        "Ref":"https://aws.amazon.com/route53/"  
+    },{
+        "Id": 40,
+        "Name": "Which of the following is NOT a characteristic of Amazon Elastic Compute Cloud (Amazon EC2)?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "It can be used to launch as many or as few virtual servers as you need.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "It is considered a serverless web service.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "It eliminates your need to invest in hardware up front, so you can develop and deploy applications faster.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "It offers scalable computing capacity in the Amazon Web Services (AWS) cloud.", "IsAnswer": false }],
+        "Explanation": "Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic. ",
+        "Ref":"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"  
     }
 
  
