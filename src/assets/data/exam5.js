@@ -1,3 +1,4 @@
+
 {
     "quiz": {
         "name": "Exam 5",
@@ -502,6 +503,314 @@
             { "Id": 1058, "QuestionId": 1010, "Name": "It offers scalable computing capacity in the Amazon Web Services (AWS) cloud.", "IsAnswer": false }],
         "Explanation": "Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic. ",
         "Ref":"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"  
+    }
+    ,{
+        "Id": 41,
+        "Name": "A company. has a web application that ultimately stores billions of images and videos, which runs in Exabyte. Which of the following AWS services can help them transfer the data to AWS?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon VPC", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Snowmobile", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Snowball", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "S3 enhanced uploader", "IsAnswer": false }],
+        "Explanation": "AWS Snowmobile is an Exabyte-scale data transfer service used to move extremely large amounts of data to AWS. You can transfer up to 100PB per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is more secure, fast and cost effective.",
+        "Ref":"https://aws.amazon.com/snowmobile/"  
+    }
+    ,{
+        "Id": 42,
+        "Name": "What is a Security Group?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "A firewall for inbound traffic, built-in around every Amazon EC2 instance.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "A list of users that can access Amazon EC2 instances.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "An Access Control List (ACL) for AWS resources.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of these.", "IsAnswer": false }],
+        "Explanation": "A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. ",
+        "Ref":"http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html"  
+    }
+    ,{
+        "Id": 43,
+        "Name": "Which of the following are benefits of the AWS's Relational Database Service (RDS)? Choose two", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Automated patches and backups", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "It allows you to store unstructured data", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "You can resize the capacity accordingly", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "It allows you to store NoSQL data", "IsAnswer": false }],
+        "Explanation": "Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.",
+        "Ref":"https://aws.amazon.com/rds/"  
+    }
+    ,{
+        "Id": 44,
+        "Name": "A company has a distributed application that periodically processes large volumes of data across multiple Amazon EC2 Instances. The application is designed to recover gracefully from Amazon EC2 instance failures. There is a requirement to accomplish this task in the most cost-effective way. Which of the following would be most appropriate?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Spot Instances", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Reserved instances", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Dedicated instances", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "On-Demand instances", "IsAnswer": false }],
+        "Explanation": "When you think of cost effectiveness, you can either have to choose Spot or Reserved instances. Now when you have a regular processing job, the best is to use spot instances and since your application is designed recover gracefully from Amazon EC2 instance failures, then even if you lose the Spot instance , there is no issue because your application can recover.",
+        "Ref":"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"  
+    }
+    ,{
+        "Id": 45,
+        "Name": "What are the design principles for performance efficiency in the cloud? (Select 3 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Democratize advanced technologies", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use serverless architectures", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Enable traceability.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Go global in minutes", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Pay upfront and save costs", "IsAnswer": false }],
+        "Explanation": "There are five design principles for performance efficiency in the cloud: ** Democratize advanced technologies: Technologies that are difficult to implement can become easier to consume by pushing that knowledge and complexity into the cloud vendor’s domain. Rather than having your IT team learn how to host and run a new technology, they can simply consume it as a service. For example, NoSQL databases, media transcoding, and machine learning are all technologies that require expertise that is not evenly dispersed across the technical community. In the cloud, these technologies become services that your team can consume while focusing on product development rather than resource provisioning and management. ** Go global in minutes: Easily deploy your system in multiple Regions around theworld with just a few clicks. This allows you to provide lower latency and a betterexperience for your customers at minimal cost. ** Use serverless architectures: In the cloud, serverless architectures remove the need for you to run and maintain servers to carry out traditional compute activities. For example, storage services can act as static websites, removing the need for webservers, and event services can host your code for you. This not only removes the operational burden of managing these servers, but also can lower transactional costs because these managed services operate at cloud scale. ** Experiment more often: With virtual and automatable resources, you can quicklycarry out comparative testing using different types of instances, storage, orconfigurations. ** Mechanical sympathy: Use the technology approach that aligns best to what youare trying to achieve. For example, consider data access patterns when selecting database or storage approaches .",
+        "Ref":"https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"  
+    }
+    ,{
+        "Id": 46,
+        "Name": "What does AWS offer to secure your network? (Choose two)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Built-in firewall.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Prevent any access to all AWS resources (except the account owner).", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Encryption in transit.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Add roles automatically to your security groups.", "IsAnswer": false }],
+        "Explanation": "The correct answers are A, C. Option A: AWS has a Built-in firewall that can be used to control traffic to your network. Option C: You can secure your network by encrypting your data in transit with TLS across all services. Option B is not correct as AWS does allow IAM users to access AWS resources based on its predefined policies. Option D is not correct as according to the shared responsibility model it is the responsibility of the customer to configure his security groups. ",
+        "Ref":"https://aws.amazon.com/security/"  
+    }
+    ,{
+        "Id": 47,
+        "Name": "What best describes what AWS is?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS is a cloud services provider.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS is a hosting services provider.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS is a security services provider.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above.", "IsAnswer": false }],
+        "Explanation": "AWS : Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services."
+    }
+    ,{
+        "Id": 48,
+        "Name": "Which of the following can be used to call AWS services from the different programming languages?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS CLI", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Console", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS SDK", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS IAM", "IsAnswer": false }],
+        "Explanation": "The AWS SDK can Simplify using AWS services in your applications with an API tailored to your programming language or platform. Option A is not correct as AWS CLI allows you to control multiple AWS services from the command line and automate them through scripts NOT from programming languages.",
+        "Ref":"https://aws.amazon.com/cli/ https://aws.amazon.com/tools/"  
+    }
+    ,{
+        "Id": 49,
+        "Name": "You are planning to offload some of the batch processing workloads on to AWS. These jobs can be interrupted and resumed at any time. Which of the following instance types would be the most cost effective to use?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "On-Demand", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Spot", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Full Upfront Reserved", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Partial Upfront Reserved", "IsAnswer": false }],
+        "Explanation": "Spot Instances are a cost-effective choice if you can be flexible about when your applications run and if your applications can be interrupted. For example, Spot Instances are well-suited for data analysis, batch jobs, background processing, and optional tasks. ",
+        "Ref":"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"  
+    }
+    ,{
+        "Id": 50,
+        "Name": "What is the concept of an AWS region?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "It is a collection of Edge locations", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "It is a collection of Compute capacity", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "It is the same as an Availability zone", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "It is a geographical area divided into Availability Zones", "IsAnswer": true }],
+        "Explanation": "A region is a geographical area divided into Availability Zones. Each region contains at least two Availability Zones.",
+        "Ref":"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html"  
+    }
+    ,{
+        "Id": 51,
+        "Name": "What AWS service must you use if you want to configure an AWS billing alarm?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "CloudWatch", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "CloudMonitor", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Consolidated billing", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "CloudTrail", "IsAnswer": false }],
+        "Explanation": "CloudWatch is the AWS service that allows you to collect metrics, and create alarms based on those metrics. Billing metrics can be tracked in CloudWatch, therefore billing alarms can be created."
+    }
+    ,{
+        "Id": 52,
+        "Name": "Your company's upper management is getting very nervous about managing governance, compliance, and risk auditing in AWS. What service should you enable and inform upper management about?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "CloudAudit", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "CloudTrail", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Cloud Compliance", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "CloudWatch", "IsAnswer": false }],
+        "Explanation": "AWS CloudTrail is designed to log all actions taken in your AWS account. This provides a great resource for governance, compliance, and risk auditing."
+    }
+    ,{
+        "Id": 53,
+        "Name": "You decided to use Amazon S3 to store infrequently accessed data. What storage class would you use?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "S3 Standard Storage", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "S3 SIA Storage", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "S3 SAA Storage", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "S3 Archive Storage", "IsAnswer": false }],
+        "Explanation": "Standard – Infrequent Access (SIA) is a storage option within Amazon S3 you can use to reduce your costs by storing less-frequently accessed data at slightly lower levels of redundancy than the standard Amazon S3 storage. ",
+        "Ref":"https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf"  
+    },{
+        "Id": 54,
+        "Name": "Which of the following can be used to increase the fault tolerance of an application?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Deploying resources across multiple edge locations", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Deploying resources across multiple VPC’s", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Deploying resources across multiple AWS Accounts", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Deploying resources across multiple Availability Zones", "IsAnswer": true }],
+        "Explanation": "By deploying your AWS resources to multiple Availability zones , you are designing with failure in mind. So if one AZ were to go down , the other AZ’s would still be up and running and hence your application would be more fault tolerant."
+    },{
+        "Id": 55,
+        "Name": "What are the areas of the performance efficiency pillar? (Select 3 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Selection", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Monitoring", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Trade-offs", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Agility", "IsAnswer": false }],
+        "Explanation": "Performance efficiency in the cloud is composed of four areas: Selection, Review, Monitoring and Trade-offs. Take a data-driven approach to building a high-performance architecture. Gather data on all aspects of the architecture, from the high-level design to the selection and configuration of resource types. By reviewing your choices on a regular basis, you ensure that you are taking advantage of the continually evolving AWS Cloud. Monitoring will ensure that you are aware of any deviance from expected performance so you can take action on it. Finally, you can make tradeoffs in your architecture to improve performance, such as using compression or caching, or relaxing consistency requirements",
+        "Ref":"https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf"  
+    },{
+        "Id": 56,
+        "Name": "What is a one benefit AND a one drawback of buying a reserved EC2 instance? (Select two)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "You are locked in to either a one- or three-year pricing commitment.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Reserved instances is best suited for occasional workloads.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "You get Dedicated instances for free", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Reserved instances can be purchased as a significant discount over on-demand instances.", "IsAnswer": true }],
+        "Explanation": "Reserved instances require a one- or three-year purchase term, so you are committing to paying for that much compute capacity for that full time period. However, in exchange for the long-term commitment, you will receive a discount (of up to 75%) over using an on-demand instance (for that same time period)."
+    },{
+        "Id": 57,
+        "Name": "What is the first step in creating an auto scaling system?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Creating launch configuration.", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Creating an auto scaling group.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Creating an auto scaling policy.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Creating the EC2 instances.", "IsAnswer": false }],
+        "Explanation": "The first step in creating an auto scaling system is to create a launch configuration then creating an auto scaling group then creating an auto scaling policy."
+    },{
+        "Id": 58,
+        "Name": "Which of the following makes it easier for developers to store, manage, and deploy Docker container images?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "ECS", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "EBS", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "ECR", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "EMR", "IsAnswer": false }],
+        "Explanation": "Amazon EC2 Container Registry (ECR) is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon EC2 Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications. Integration with AWS Identity and Access Management (IAM) provides resource-level control of each repository. With Amazon ECR, there are no upfront fees or commitments. You pay only for the amount of data you store in your repositories and data transferred to the Internet.",
+        "Ref":"https://d1.awsstatic.com/whitepapers/aws-overview.pdf"  
+    },{
+        "Id": 59,
+        "Name": "How can ELBs provide fault tolerance to your application?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "By replicating your data in multiple availability zones.", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "By ensuring that only healthy targets receive traffic.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "By creating Read Replicas.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "By distributing traffic to the unregistered targets.", "IsAnswer": true }],
+        "Explanation": "ELBs does not replicate data. Read Replicas are special types of DB instance created using Amazon RDS NOT ELB.  ELB does not route traffic to unregistered targets even if all the registered targets failed. ELB continuously doing health checks to the registered targets and routes traffic only to the healthy ones in order to make your applications fault tolerant."
+    },{
+        "Id": 60,
+        "Name": "Which AWS support plan would help provide technical support when needed? (Select 3 that apply )", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Basic", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Developer", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Business", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Enterprise", "IsAnswer": true }],
+        "Explanation": "https://aws.amazon.com/premiumsupport/compare-plans/"
+    },{
+        "Id": 61,
+        "Name": "Which of the following provides high availability and durability? (Select 4 that apply)", 
+        "Tag":"",
+        "manyoptions":true,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "S3", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "EBS", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "EFS", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Aurora", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Firehose", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "HSM", "IsAnswer": false }],
+        "Explanation": "Except for Firehose and HSM all others provide HA and durability.",
+        "Ref":"https://d1.awsstatic.com/whitepapers/aws-overview.pdf"  
+    },{
+        "Id": 62,
+        "Name": "You want to host a set of servers in AWS using Amazon EC2 instances for a short period (3 months), what is the most cost-effective option?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Spot Instances", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "On-Demand", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "No Upfront costs Reserved", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Partial Upfront costs Reserved", "IsAnswer": false }],
+        "Explanation": "Since the requirement is just for 3 months, then the best cost effective option is to use On-Demand Instances.",
+        "Ref":"https://aws.amazon.com/ec2/pricing/on-demand/"  
+    },{
+        "Id": 63,
+        "Name": "You are sure that your application deployed with AWS needs frequent updates for the next 6 months. Which of the following services would allow you to make these updates easily, retaining the ability to change the AWS resources powering the application any time?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Lambda", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Elastic Beanstalk", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS CodeCommit", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS EFS", "IsAnswer": false }],
+        "Explanation": "AWS Elastic Beanstalk is considered a Platform as a Service (PaaS). it is an easy-to-use service for deploying, scaling and updating web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS. You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time. ** AWS Lambda is not true because it is a serverless service which means you don’t have the ability to change the AWS resources powering the application. AWS Lambda handles everything in the background.",
+        "Ref":"https://aws.amazon.com/elasticbeanstalk/"  
+    },{
+        "Id": 64,
+        "Name": "A user is launching an EC2 instance in the US East region. Which of the below-mentioned options is recommended by AWS with respect to the selection of the availability zone?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Always select the AZ while launching an instance", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Always select the US-East-1-a zone for HA", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Do not select the AZ; instead let AWS select the AZ", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "The user can never select the availability zone while launching an instance", "IsAnswer": false }],
+        "Explanation": "When launching an instance with EC2, AWS recommends not to select the availability zone (AZ). AWS specifies that the default Availability Zone should be accepted. This is because it enables AWS to select the best Availability Zone based on the system health and available capacity. If the user launches additional instances, only then an Availability Zone should be specified. This is to specify the same or different AZ from the running instances.",
+        "Ref":"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html"  
+    },{
+        "Id": 65,
+        "Name": "A company is hosting an infrastructure, and most of the EC2 instances are continually utilized throughout the year. Which of the following would be the most cost-effective?", 
+        "Tag":"",
+        "manyoptions":false,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Reserved instances", "IsAnswer": true},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Spot instances", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Regular instances", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "On-demand instances", "IsAnswer": false }],
+        "Explanation": "When you have instances that will be used continuously and throughout the year, the best option is to buy reserved instances. By choosing reserved instances, you are actually allocated an instance for the entire year or the duration you specify with a reduced cost. ",
+        "Ref":"https://aws.amazon.com/ec2/pricing/reserved-instances/"  
     }
 
  
