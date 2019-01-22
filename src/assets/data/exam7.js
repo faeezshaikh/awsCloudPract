@@ -264,9 +264,148 @@
                 { "Id": 1058, "QuestionId": 1010, "Name": "Domain Name System (DNS) service", "IsAnswer": true }],
             "Explanation": "Route 53 is AWS's domain and DNS management service. You can use it to register new domain names, as well as manage DNS record sets."
         } ,
-        ,
+        
         {
             "Id": 21,
+            "Name": "Which AWS networking service enables a company to create a virtual network within AWS?", 
+            "Tag":"tech",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "AWS Config", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Amazon Route 53", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "AWS Direct Connect", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Virtual Private Cloud (Amazon VPC)", "IsAnswer": true }],
+            "Explanation": "See link for details.",
+            "Ref":"https://aws.amazon.com/vpc/"
+        } ,
+        
+        {
+            "Id": 22,
+            "Name": "What are the benefits of using AWS X-Ray? (Choose two)", 
+            "Tag":"tech",
+            "manyoptions":true,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Offers powerful autoscaling for all search domains.", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Reviewing request behavior.", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Provides automatic monitoring and recovery for your search domains.", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Discovering application issues.", "IsAnswer": true }],
+            "Explanation": "The other options are benefits of Amazon CloudSearch.",
+            "Ref":"https://aws.amazon.com/xray/ https://aws.amazon.com/cloudsearch/"
+        } ,
+        
+        {
+            "Id": 23,
+            "Name": "Which of the following is a factor you should consider when estimating the cost of Amazon EC2? (Select 3 that apply)", 
+            "Tag":"bill",
+            "manyoptions":true,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Instance type", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Clock hours of server time", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Number of security groups", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Number of instances", "IsAnswer": true }],
+            "Explanation": "When you begin to estimate the cost of using Amazon EC2, consider the following: **Clock hours of server time: Resources incur charges when they are running—for example, from the time Amazon EC2 instances are launched until they are terminated, or from the time Elastic IPs are allocated until the time they are de-allocated. **Instance type: Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes at least one instance size, allowing you to scale your resources to the requirements of your target workload. **Pricing model: With On-Demand Instances, you pay for compute capacity by the hour with no required minimum commitments. Reserved Instances give you the option to make a low one-time payment—or no payment at all—for each instance you want to reserve and in turn receive a significant discount on the hourly usage charge for that instance. With Spot Instances, you can bid for unused Amazon EC2 capacity. **Number of instances: You can provision multiple instances of your Amazon EC2 and Amazon EBS resources to handle peak loads. **Load balancing: An Elastic Load Balancer can be used to distribute traffic among Amazon EC2 Instances. The number of hours the Elastic Load Balancer runs and the amount of data it processes contribute to the monthly cost. **Detailed monitoring: You can use Amazon CloudWatch to monitor your EC2 instances. By default, basic monitoring is enabled. For a fixed monthly rate, you can opt for detailed monitoring, which includes seven preselected metrics recorded once a minute. Partial months are charged on an hourly pro rata basis, at a per instance-hour rate. **Auto Scaling: Auto Scaling automatically adjusts the number of Amazon EC2 instances in your deployment according to conditions you define. This service is available at no additional charge beyond Amazon CloudWatch fees. **Elastic IP addresses: You can have one Elastic IP (EIP) address associated with a running instance at no charge. **Operating systems and software packages: Operating system prices are included in instance prices, unless you choose to bring your own licenses. There are no additional licensing costs to run the following commercial operating systems: Red Hat Enterprise Linux, SUSE Enterprise Linux, Windows Server, and Oracle Enterprise Linux. Additionally, AWS has made it easy for you by partnering with Microsoft, IBM, and several other vendors so you can run commercial software packages, such as Microsoft SQL Server, on your Amazon EC2 Instances,. For commercial software packages AWS doesn’t provide—such as nonstandard operating systems, Oracle Applications, Windows Server applications such as Microsoft SharePoint and Microsoft Exchange—you need to obtain a license from the vendors. You can also bring your existing license to the cloud through specific vendor programs such as Microsoft License Mobility Through Software Assurance Program. ",
+            "Ref":"https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf"
+        } ,
+        
+        {
+            "Id": 24,
+            "Name": "What should you do if you see resources, which you don’t remember creating, in the AWS Management Console? (Select all that apply)", 
+            "Tag":"concepts",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Change your AWS root account password and the passwords of any IAM users.", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Give your root account password to a specialized person to secure your account.", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Delete any resources on your account you didn’t create, such as EC2 instances and AMIs, EBS volumes and snapshots, and IAM users.", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Respond to any notifications you received from AWS Support through the AWS Support Center.", "IsAnswer": true }],
+            "Explanation": "If you suspect that your account has been compromised, or if you have received a notification from AWS that the account has been compromised, perform the following tasks: **Change your AWS root account password and the passwords of any IAM users. **Delete or rotate all root and AWS Identity and Access Management (IAM) access keys. *Delete any resources on your account you didn’t create, such as EC2 instances and AMIs, EBS volumes and snapshots, and IAM users. **Respond to any notifications you received from AWS Support through the AWS Support Center. ",
+            "Ref":"https://aws.amazon.com/premiumsupport/knowledge-center/potential-account-compromise/"
+        } ,
+        
+        {
+            "Id": 25,
+            "Name": "An external auditor requests a log of all access to the AWS resources in the company’s account. Which of the following services can be used to give such information?", 
+            "Tag":"securoity",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "AWS Cloudwatch", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "AWS SNS", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "AWS EC2", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "AWS Cloudtrail", "IsAnswer": true }],
+            "Explanation": "AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting.",
+            "Ref":"https://aws.amazon.com/cloudtrail/"
+        } ,
+        
+        {
+            "Id": 26,
+            "Name": "What are the characteristics of the AWS business support plan? (Select all that apply)", 
+            "Tag":"bill",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "24x7 access to customer service.", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Access to a Well-Architected Review delivered by AWS Solution Architects", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Business hours access to Cloud Support Associates via email", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "24x7 access to Cloud Support Engineers via email, chat & phone", "IsAnswer": true }],
+            "Explanation": "See link for details",
+            "Ref":"https://aws.amazon.com/premiumsupport/compare-plans/"
+        } ,
+        
+        {
+            "Id": 27,
+            "Name": "Which of the following tools can be used to estimate your monthly bill?", 
+            "Tag":"bill",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Simple Monthly Calculator", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Advanced Monthly Calculator", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "AWS Monthly Cost Explorer", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "AWS Advanced Monthly Cost Explorer", "IsAnswer": false }],
+            "Explanation": "See link for details",
+            "Ref":"https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf"
+        } ,
+        
+        {
+            "Id": 28,
+            "Name": "You are designing a web application that will be hosted in the AWS Cloud. Which of the following should you care about to reduce interdependencies so that failures do not impact other components?", 
+            "Tag":"concepts",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Decoupling", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Integration", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Aggregation", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Segregation", "IsAnswer": false }],
+            "Explanation": "The entire concept of decoupling components is to ensure that the different components of an application can be managed and maintained separately. If all components are tightly coupled then when one component goes down, the entire application would do down. Hence it is always a better design practice to decouple application components."
+        } ,
+        
+        {
+            "Id": 29,
+            "Name": "What are the benefits of the Amazon Cloud Directory? (Choose two)", 
+            "Tag":"tech",
+            "manyoptions":true,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "You can search for all the parent objects along a dimension after creating a small number of queries.", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Efficiently organize hierarchies of data across multiple dimensions.", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Scale automatically to hundreds of millions of objects.", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Cloud Directory has a fixed schema so your applications remain secure.", "IsAnswer": false }],
+            "Explanation": "Amazon Cloud Directory enables you to build flexible cloud-native directories for organizing hierarchies of data along multiple dimensions. With Cloud Directory, you can create directories for a variety of use cases, such as organizational charts, course catalogs, and device registries. While traditional directory solutions, such as Active Directory Lightweight Directory Services (AD LDS) and other LDAP-based directories, limit you to a single hierarchy, Cloud Directory offers you the flexibility to create directories with hierarchies that span multiple dimensions. For example, you can create an organizational chart that can be navigated through separate hierarchies for reporting structure, location, and cost center. Amazon Cloud Directory automatically scales to hundreds of millions of objects and provides an extensible schema that can be shared with multiple applications. As a fully-managed service, Cloud Directory eliminates time-consuming and expensive administrative tasks, such as scaling infrastructure and managing servers. You simply define the schema, create a directory, and then populate your directory by making calls to the Cloud Directory API.  You can search for all the parent objects along a dimension without creating multiple, nested queries. For example, looking up a management chain for an employee can be performed with a single query in Cloud Directory where traditional solutions would require multiple queries.Cloud Directory has a flexible schema so you can extend your schema with new attributes at any time. Multiple applications can independently extend the schema. This enables applications to share a single directory and avoid duplication of data.",
+            "Ref":"https://aws.amazon.com/cloud-directory/"
+        } ,
+        
+        {
+            "Id": 30,
+            "Name": "Which of the following AWS support plans would give you an access to a “Well-Architected Review” delivered by AWS Solution Architects?", 
+            "Tag":"",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Basic", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Developer", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Business", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Enterprise", "IsAnswer": true }],
+            "Explanation": "See link for details",
+            "Ref":"https://aws.amazon.com/premiumsupport/compare-plans/"
+        }  ,
+        
+        {
+            "Id": 31,
             "Name": "", 
             "Tag":"",
             "manyoptions":false,
