@@ -215,45 +215,58 @@
         } ,
         {
             "Id": 17,
-            "Name": "", 
-            "Tag":"",
+            "Name": "Which of the following AWS services allows you to convert text to MP3 audio?", 
+            "Tag":"tech",
             "manyoptions":false,
             "Options": [
-                { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false},
-                { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }],
-            "Explanation": "",
-            "Ref":""
+                { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Kinesis", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Amazon Polly", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Amazon Rekognition", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "IsAnswer": false }],
+            "Explanation": "Amazon Polly is a service that turns text into lifelike speech. Polly lets you create applications that talk, enabling you to build entirely new categories of speech-enabled products. Polly is an Amazon artificial intelligence (AI)service that uses advanced deep learning technologies to synthesize speech that sounds like a human voice. Polly includes 47 lifelike voices spread across 24 languages, so you can select the ideal voice and build speech-enabled applications that work in many different countries. Amazon Polly delivers the consistently fast response times required to support real-time, interactive dialog. You can cache and save Polly’s speech audio to replay offline or redistribute. And Polly is easy to use. You simply send the text you want converted into speech to the Polly API, and Polly immediately returns the audio stream to your application so your application can play it directly or store it in a standard audio file format, such as MP3.",
+            "Ref":"https://d0.awsstatic.com/whitepapers/aws-overview.pdf"
         } ,
         {
             "Id": 18,
-            "Name": "", 
-            "Tag":"",
+            "Name": "What are the benefits of using Amazon VPC ? (Select 3 that apply)", 
+            "Tag":"concepts",
             "manyoptions":false,
             "Options": [
-                { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false},
-                { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }],
-            "Explanation": "",
-            "Ref":""
+                { "Id": 1055, "QuestionId": 1010, "Name": "You have complete control over your virtual networking environment.", "IsAnswer": true},
+                { "Id": 1056, "QuestionId": 1010, "Name": "You can select your own IP address range.", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Uses IPv6 only for secure and easy access to resources and applications", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "You can configure route tables and network gateways.", "IsAnswer": true }],
+            "Explanation": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.",
+            "Ref":"https://d1.awsstatic.com/whitepapers/aws-overview.pdf"
         } ,
         {
             "Id": 19,
-            "Name": "", 
-            "Tag":"",
+            "Name": "You work for a hospital that needs to store patients’ medical records for a minimum of 10 years. Most of these records will never be accessed but must be made available upon request (within a few hours).What is the most effective cost storage option?", 
+            "Tag":"concepts,tech",
             "manyoptions":false,
             "Options": [
-                { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false},
-                { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-                { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }],
-            "Explanation": "",
-            "Ref":""
+                { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Simple Storage Service (S3)", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Amazon Elastic Block Store (EBS)", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Amazon Elastic File System (EFS)", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Glacier", "IsAnswer": false }],
+            "Explanation": "Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.",
+            "Ref":"https://aws.amazon.com/glacier/"
         } ,
         {
             "Id": 20,
+            "Name": "What is the purpose of AWS's Route 53 service? (Select 2 that apply)", 
+            "Tag":"tech",
+            "manyoptions":false,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Provides infrastructure security optimization recommendations", "IsAnswer": false},
+                { "Id": 1056, "QuestionId": 1010, "Name": "Domain Registration", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Responsible for all security issues.", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Domain Name System (DNS) service", "IsAnswer": true }],
+            "Explanation": "Route 53 is AWS's domain and DNS management service. You can use it to register new domain names, as well as manage DNS record sets."
+        } ,
+        ,
+        {
+            "Id": 21,
             "Name": "", 
             "Tag":"",
             "manyoptions":false,
